@@ -48,3 +48,17 @@ with high_paid_employee_cte as(
 )
 
 select * from high_paid_employee_cte;
+
+
+create table demo1(
+    id integer primary key,
+    name text,
+    update_time timestamp default now()
+);
+
+insert into demo1(id, name)
+values(1, 'Ruba'),
+(2, 'Ramanan');
+
+insert into demo1(id, name, update_time)
+values(3, 'Thayalan', '2025-03-05 11:02:43.960877');
